@@ -1,11 +1,14 @@
-import Saludar from'./Saludar'
+import Nav from'./nav.jsx'
+import Footer from'./footer.jsx'
+import Header from'./header.jsx'
 function App() {
   return (
 <div className="container">
-      <h1>HOLA PAI</h1>
       
-      <Saludar></Saludar>
-
+      <Header></Header>
+      <Nav></Nav>
+       <Footer></Footer>
+      
     </div>
 
   

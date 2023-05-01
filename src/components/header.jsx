@@ -1,9 +1,8 @@
-import React from 'react'
-
-const pai = () => {
+import '../Styles/header.css'
+const Header = () => {
   return (
-    <div>pai</div>
+    <div>header</div>
   )
 }
 
-export default pai
+export default Header
