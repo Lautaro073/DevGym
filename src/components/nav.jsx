@@ -4,9 +4,9 @@ import '../Styles/nav.css'
 
 function Nav(){
     return(
-        <div >
-        nav
-        </div>
+        <nav className='nav'>
+            
+        </nav>
     )
 }
 export default Nav;
