@@ -6,9 +6,9 @@ function App() {
   return (
 <div className="">
       
-      <Header></Header>
-      <Nav></Nav>
-      <Principal></Principal>
+   <Header></Header>
+   <Nav></Nav>
+ <Principal></Principal>
        <Footer></Footer>
       
     </div>
