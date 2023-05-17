@@ -4,11 +4,11 @@ import Header from'./header.jsx'
 import Principal from'./principal.jsx'
 function App() {
   return (
-<div className="container">
+<div className="">
       
-      <Header></Header>
-      <Nav></Nav>
-      <Principal></Principal>
+   <Header></Header>
+   <Nav></Nav>
+ <Principal></Principal>
        <Footer></Footer>
       
     </div>

@@ -1,10 +1,15 @@
 import '../Styles/header.css'
-import logo from '../Img/logo.png'
+import Nav from './nav.jsx'
 const Header = () => {
   return (
     <header className='header'>
-    <img className='logo' src={logo}/>
-    <h1 className='h1'>DevGym</h1>
+
+    <h1 className='frase'>
+      "TU ÚNICO LÍMITE ERES TU"
+    </h1>
+    <Nav>
+    
+    </Nav>
     </header>
   )
 }
