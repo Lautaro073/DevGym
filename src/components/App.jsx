@@ -2,6 +2,8 @@ import Nav from'./nav.jsx'
 import Footer from'./footer.jsx'
 import Header from'./header.jsx'
 import Principal from'./principal.jsx'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import Form_contacto from './formulario.jsx'
 function App() {
   return (
 <div className="">
@@ -9,6 +11,7 @@ function App() {
    <Header></Header>
    <Nav></Nav>
  <Principal></Principal>
+<Form_contacto></Form_contacto>
        <Footer></Footer>
       
     </div>
