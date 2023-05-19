@@ -9,7 +9,6 @@ function App() {
 <div className="">
       
    <Header></Header>
-   <Nav></Nav>
  <Principal></Principal>
 <Form_contacto></Form_contacto>
        <Footer></Footer>
