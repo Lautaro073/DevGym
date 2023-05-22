@@ -5,11 +5,12 @@ import crossfit from '../Img/crossfit.jpeg'
 
 function Principal(){
     return(
+
         <section className='section'>
-         <img alt='pilates' src={pilates}/>
-         <img alt='musculacion' src={musculacion}/>
-         <img alt='crossfit' src={crossfit}/>
+            <img alt='pilates' src={pilates}/>
+            <img alt='musculacion' src={musculacion}/>
+            <img alt='crossfit' src={crossfit}/>
         </section>
-    )
+    );
 }
 export default Principal;
