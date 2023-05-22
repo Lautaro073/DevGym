@@ -104,9 +104,6 @@ const Form_contacto=()=> {
     
           </>
     )
-        
-    
-    
 }
 
 export default Form_contacto

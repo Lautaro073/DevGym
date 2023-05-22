@@ -2,7 +2,7 @@
     background-image: url(../Img/banner.png);
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 400px;
+    height: 400px;
     filter: contrast(110%);
 }
 .frase {

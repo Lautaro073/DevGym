@@ -1,10 +1,10 @@
-.navbar {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    background-color: transparent;
-    padding: 15px;
+.navbar {background-color: rgb(219, 69, 14);
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: space-between;
+background-color: transparent;
+padding: 15px;
 }
 
 .navbar a{
@@ -43,15 +43,19 @@ color: #fff;
         align-items: center;
         padding: 20px;
     }
+
     .navbar label{
         display: inline-flex;
         align-items: center;
         cursor: pointer;
     }
+
     #toggler:checked ~ .menu{
         max-height: 100%;
     }
+
     .fabars{
         filter:invert(100%)
     }
+
 }

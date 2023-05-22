@@ -4,9 +4,10 @@ import Nav from './nav.jsx'
 const Header = () => {
   return (
     <header className='header'>
-       <Nav>
+        <Nav>
         
        </Nav>
+      
        <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -34,8 +35,8 @@ const Header = () => {
           <span class="visually-hidden">Next</span>
         </button>
        </div>
+
     </header>
   )
 }
-
 export default Header
