@@ -52,10 +52,10 @@ const Form_contacto = () => {
     return (
         <>
     
-     <div className="container py-lg-5 py-md-5 py-sm-4 py-3">
+     <div className="container py-lg-5 py-md-5 py-sm-4 py-3" id='Contacto'>
         <h3 className="title text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">Contáctanos</h3>
        
-        <form onSubmit={handleEnviar} id='Contacto'>
+        <form onSubmit={handleEnviar} >
       <div className="row text-center contact-wls-detail">
         <div className="col-md-4 form-group form-contacto">
           <input
