@@ -40,10 +40,13 @@ h2, p{
     filter: contrast(120%);
 }
 .tit{
+    
+    background-color: #2a2a2a;
+}
+.tit h1{
     font-family: Baskerville, Baskerville Old Face, Garamond, Times New Roman, serif;
-    font-size: 90px;
-    color:white;
+    font-size: 55px;
+    color:#fff;
     text-align: center;
-    margin: 0;
-    background-color: #000000c0;
+  
 }

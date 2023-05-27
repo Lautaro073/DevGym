@@ -6,8 +6,8 @@ import crossfit from '../Img/crossfit.jpeg'
 function Principal(){
     return(
 
-        <div>
-            <h1 className='tit'>CLASES</h1>
+        <div className='tit'>
+            <h1 className='tit' id='Clases'>CLASES</h1>
             <section className='section'>
                 <div className='card'>
                     <img alt='pilates' src={pilates}/>
