@@ -22,7 +22,7 @@ const Header = () => {
           </div>
           <div class="carousel-item">
             <div className='frase'>
-              TU ÚNICO LÍMITE ERES TÚ
+              NO CONOCES TUS LÍMITES, HASTA QUE LOS SUPERAS
             </div>
           </div>
         </div>

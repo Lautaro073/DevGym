@@ -1,19 +1,49 @@
-.body{background-color: rgb(20, 11, 3);}
 section{
     display: flex;
     width: 100%;
     height: 430px;
 }
 section img{
-    width: 0px;
     flex-grow: 1;
     object-fit: cover;
-    opacity: .9;
+    height: 430px;
+} 
+.card{
+    width: 100%;
+    height: 430px;
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+}
+.contenido{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #02020266;
+    opacity: 0;
     transition: .5s ease;
 }
-section img:hover{
+h2, p{
+    font-family: sans-serif;
+    color: #ffffff;
+    text-align: center;
+}
+.contenido a:hover{
+    color:#db450e;
+}
+.contenido:hover{
     cursor: pointer;
-    width: 300px;
     opacity: 1;
     filter: contrast(120%);
+}
+.tit{
+    font-family: Baskerville, Baskerville Old Face, Garamond, Times New Roman, serif;
+    font-size: 90px;
+    color:white;
+    text-align: center;
+    margin: 0;
+    background-color: #000000c0;
 }
