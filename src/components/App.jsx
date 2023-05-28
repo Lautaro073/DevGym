@@ -1,6 +1,7 @@
 import Footer from'./footer.jsx'
 import Header from'./header.jsx'
 import Principal from'./principal.jsx'
+import Carrusel from'./Carrusel.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Form_contacto from './formulario.jsx'
 import Coach from './coach.jsx'
@@ -9,6 +10,7 @@ function App() {
 <div className="">
       <Header></Header>
       <Principal></Principal>
+      <Carrusel></Carrusel>
  <Coach></Coach>
       <Form_contacto></Form_contacto>
       <Footer></Footer>
