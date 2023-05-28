@@ -28,4 +28,16 @@
     background:rgb(219, 69, 14);
     color: #fff;
     }
+    .tit-form{
+        font-family: Baskerville, Baskerville Old Face, Garamond, Times New Roman, serif;
+        font-size: 55px;
+        color:#000;
+    }
+    @media only screen and (max-width: 768px) {
    
+        .coach-title {
+          font-size: 45px;
+        }
+        
+       
+      }

@@ -159,3 +159,39 @@ input[id="6"]:checked ~ .pagination .pagination-item[for="6"]{
         transform: translate3d(calc(-100% * 5), 0, 0);
     }
 }
+@media only screen and (max-width: 768px) {
+    .fondo-carrusel {
+      height: 500px;
+    }
+    
+    .tit-carrusel {
+      font-size: 45px;
+    }
+    
+    .item-slidee img {
+      height: 350px;
+    }
+    
+    .container-all {
+      height: 350px;
+    }
+  }
+  @media only screen and (min-width: 1440px) {
+    .fondo-carrusel {
+      height: 1200px;
+    }
+    
+    .tit-carrusel {
+      font-size: 70px;
+    }
+    
+    .item-slidee img {
+      height: 950px;
+    }
+    
+    .container-all {
+      height: 950px;
+    }
+  }
+  
+  

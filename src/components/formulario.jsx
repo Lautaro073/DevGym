@@ -28,7 +28,7 @@ const Form_contacto = () => {
 
   // Manejador de eventos que se llama cuando uno o más campos del formulario cambian
   const handleInputChange = (event) => {
-    const { input, value } = event.target;
+    const { name, value } = event.target;
 
     // Objeto que mapea los nombres de los campos a las funciones setter correspondientes
     const stateSetterMap = {
@@ -39,7 +39,7 @@ const Form_contacto = () => {
     };
 
     // Si el nombre del campo coincide con una clave en el objeto stateSetterMap, entonces llama a la función setter correspondiente con el valor actual del campo
-    const setState = stateSetterMap[input];
+    const setState = stateSetterMap[name];
     if (setState) {
       setState(value);
     }
@@ -53,7 +53,7 @@ const Form_contacto = () => {
         <>
     
      <div className="container py-lg-5 py-md-5 py-sm-4 py-3" id='Contacto'>
-        <h3 className="title text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">Contáctanos</h3>
+        <h3 className="tit-form text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">CONTÁCTANOS</h3>
        
         <form onSubmit={handleEnviar} >
       <div className="row text-center contact-wls-detail">

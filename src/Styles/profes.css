@@ -55,3 +55,11 @@
 .icons a:hover{
     color:rgb(219, 69, 14) ;
 }
+@media only screen and (max-width: 768px) {
+   
+    .coach-title {
+      font-size: 45px;
+    }
+    
+   
+  }
