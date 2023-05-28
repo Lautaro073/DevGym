@@ -7,7 +7,7 @@ const Header = () => {
         <Nav>
         
        </Nav>
-      
+       
        <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
         <div class="carousel-inner">
           <div class="carousel-item active">

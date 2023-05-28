@@ -1,19 +1,19 @@
 import '../Styles/principal.css'
-import pilates from '../Img/pilates.jpg'
+import funcional from '../Img/funcional.jpg'
 import musculacion from '../Img/musculacion.jpg'
 import crossfit from '../Img/crossfit.jpeg'
 
 function Principal(){
     return(
 
-        <div>
-            <h1 className='tit'>CLASES</h1>
+        <div className='fondo'>
+            <h1 className='tit' id='Clases'>CLASES</h1>
             <section className='section'>
                 <div className='card'>
-                    <img alt='pilates' src={pilates}/>
+                    <img alt='funcional' src={funcional}/>
                     <div className='contenido'>
-                        <h2>Pilates</h2>
-                        <p>Trabaja tus músculos en profundidad mientras los relaja. Fortalece el cuerpo y la mente desde la parte más profunda a la más superficial, aumentando y uniendo el dinamismo y la fuerza muscular con el control mental, la relajación y la respiración.</p>
+                        <h2>Funcional</h2>
+                        <p>Trabaja de forma global músculos y articulaciones realizando ejercicios que mejoran la movilidad corporal, la agilidad y el equilibrio, desarrolla la salud cardiovascular, corrige la postura y fortalece la masa muscular.</p>
                     </div>
                 </div>
                 <div className='card'>

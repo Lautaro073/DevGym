@@ -6,21 +6,16 @@
     background-color: transparent;
     padding: 10px 20px;
 }
-
 .navbar a{
     text-decoration: none;
     color: white;
     font-family: serif;
     font-size: 22px;
+    padding: 0px 20px;
 }
 .navbar a:hover{
     color: #db450e;
 }
-
-.logo{
-    margin-right: 50px;
-}
-
 .lista{
     list-style: none;
     display: flex;

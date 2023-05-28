@@ -1,16 +1,16 @@
 section{
     display: flex;
     width: 100%;
-    height: 430px;
+    height: 450px;
 }
 section img{
     flex-grow: 1;
     object-fit: cover;
-    height: 430px;
+    height: 450px;
 } 
 .card{
     width: 100%;
-    height: 430px;
+    height: 450px;
     background-size: cover;
     box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
 }
@@ -39,11 +39,14 @@ h2, p{
     opacity: 1;
     filter: contrast(120%);
 }
+.fondo{
+    background-color: #2a2a2a;
+    height: 620px;
+}
 .tit{
     font-family: Baskerville, Baskerville Old Face, Garamond, Times New Roman, serif;
-    font-size: 90px;
-    color:white;
+    font-size: 55px;
+    color:#fff;
     text-align: center;
-    margin: 0;
-    background-color: #000000c0;
+    padding: 10px 0px;
 }
