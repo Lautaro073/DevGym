@@ -4,7 +4,7 @@ function Nav(){
     
     return(
         <nav className='navbar'>
-        <a href='#'>DevGym</a>
+        <a href='#' className='logo'>DevGym</a>
         <input type='checkbox' id='toggler'></input>
         <label className='fabars' for='toggler'><i className='fa fa-bars'></i></label>
         <div className='menu'>

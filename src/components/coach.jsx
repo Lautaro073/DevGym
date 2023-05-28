@@ -15,8 +15,8 @@ function Coach(){
         icon={t1}
         nombre="Matías Fernández"    
         enseña="Musculación"
-        descripcion="Planificación de rutinas - Aumento de masa muscular - 
-        Descenso de peso - Antropometría/bioimpedancia"
+        descripcion="Entrenamiento perzonalizado - Especialista en fuerza y acondicionamiento físico -
+         Alto rendimiento"
         />
          <Profes
         icon={t2}
@@ -29,7 +29,8 @@ function Coach(){
         icon={t3}
         nombre="María Gomez"    
         enseña="CrossFit"
-        descripcion="Entrenamiento perzonalizado - Especialista en fuerza y acondicionamiento físico - Alto rendimiento"
+        descripcion="Planificación de rutinas - Aumento de masa muscular - 
+        Descenso de peso - Antropometría/bioimpedancia"
         /> 
         </div>
         </div>

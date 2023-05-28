@@ -11,9 +11,9 @@ const Footer = () => {
         </div>
         <div className="box">
           <h2>CLASES</h2>
+          <p>CrossFit</p>
           <p>Musculación</p>
           <p>Funcional</p>
-          <p>CrossFit</p>
         </div>
         <div className="box">
           <h2>HORARIOS</h2>
