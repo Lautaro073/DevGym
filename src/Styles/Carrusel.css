@@ -1,7 +1,17 @@
 .img{
     max-width: 100%;
 }
-
+.tit-carrusel{
+    
+    background-color: #fff;
+}
+.tit-carrusel h1{
+    font-family: Baskerville, Baskerville Old Face, Garamond, Times New Roman, serif;
+    font-size: 55px;
+    color:#000;
+    text-align: center;
+    margin-top: 10px;
+}
 .container-all{
     position: relative;
     height: 600%;

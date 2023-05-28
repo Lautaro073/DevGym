@@ -11,6 +11,10 @@ function Carrusel(){
 
 
     return(
+        <>
+     <div className='tit-carrusel' id='Instalaciones'>
+            <h1>INSTALACIONES</h1>
+        </div>   
     <div className='container-all'>
 
         <input type='radio' id='1' name='image-slidee' hidden/>
@@ -77,7 +81,7 @@ function Carrusel(){
     </div>
 
     </div>
-
+</>
     )
 }
 export default Carrusel;
