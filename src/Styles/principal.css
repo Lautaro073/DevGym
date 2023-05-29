@@ -50,6 +50,50 @@ h2, p{
     text-align: center;
     padding: 10px 0px;
 }
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 576px) {
+    section{
+      height: auto; 
+      flex-direction: column;
+      align-items: center;
+      
+    }
+    section img{
+      height: auto;
+      width: 100%;
+    }
+    .card{
+      height: auto;
+      margin-bottom: 20px;
+    }
+    .fondo{
+        background-color: #2a2a2a;
+        height: auto;
+    }
+  }
+  
+  /* Estilos para tablets */
+  @media screen and (min-width: 577px) and (max-width: 768px) {
+    section{
+      height: 400px; 
+      flex-direction: row;
+      align-items: stretch;
+    }
+      .fondo{
+          background-color: #2a2a2a;
+          height: 550px;
+      }
+  }
+  
+  /* Estilos para pantallas medianas y grandes */
+  @media screen and (min-width: 769px) {
+    section{
+      height: 450px; 
+      flex-direction: row;
+      align-items: stretch;
+    }
+  }
+  
 @media only screen and (max-width: 768px) {
    
     .tit {

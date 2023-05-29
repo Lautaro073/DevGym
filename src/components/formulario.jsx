@@ -53,7 +53,7 @@ const Form_contacto = () => {
         <>
     
      <div className="container py-lg-5 py-md-5 py-sm-4 py-3" id='Contacto'>
-        <h3 className="tit-form text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">CONTÁCTANOS</h3>
+        <h3 className="title tit-form text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">CONTÁCTANOS</h3>
        
         <form onSubmit={handleEnviar} >
       <div className="row text-center contact-wls-detail">
