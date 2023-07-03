@@ -1,16 +1,16 @@
 import '../Styles/principal.css'
-import funcional from '../Img/funcional.jpg'
-import musculacion from '../Img/musculacion.jpg'
-import crossfit from '../Img/crossfit.jpeg'
-
+import Funcional from '../Img/funcional.jpg'
+import Musculacion from '../Img/musculacion.jpg'
+import Crossfit from '../Img/crossfit.jpeg'
+import SlideInTop from '../components/SlideInTop'
 function Principal(){
     return(
 
         <div className='fondo'>
             <h1 className='tit' id='Clases'>CLASES</h1>
-            <section className='section'>
+            <SlideInTop><section className='section'>
                 <div className='card'>
-                    <img alt='funcional' src={funcional}/>
+                    <img alt='funcional' src={Funcional}/>
                     <div className='contenido'>
                         <h2>Funcional</h2>
                         <p>Trabaja de forma global músculos y articulaciones realizando ejercicios que mejoran la movilidad corporal,
@@ -18,7 +18,7 @@ function Principal(){
                     </div>
                 </div>
                 <div className='card'>
-                    <img alt='musculacion' src={musculacion}/>
+                    <img alt='musculacion' src={Musculacion}/>
                     <div className='contenido'>
                         <h2>Musculación</h2>
                         <p>Tonifica y desarrolla tu masa muscular, mediante el uso de máquinas y pesas. Incrementa tu fuerza mientras
@@ -26,7 +26,7 @@ function Principal(){
                     </div>
                 </div>
                 <div className='card'>
-                    <img alt='crossfit' src={crossfit}/>
+                    <img alt='crossfit' src={Crossfit}/>
                     <div className='contenido'>
                         <h2>CrossFit</h2>
                         <p>Realiza un entrenamiento de fuerza y acondicionamiento basado en ejercicios funcionales incorporando un 
@@ -34,7 +34,7 @@ function Principal(){
                     </div>
                 </div>
             </section>
-        </div>
+       </SlideInTop> </div>
     )
 }
 export default Principal;

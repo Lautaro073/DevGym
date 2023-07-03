@@ -1,9 +1,11 @@
 import '../Styles/profes.css'
-
+import SlideInTop from './SlideInTop';
+import LazyLoad from 'react-lazyload';
 function Profes(proops){
     return(
        <>
           <div className="col-lg-3 col-md-6 col-sm-6">
+          <LazyLoad once><SlideInTop>
             <div className="coaches-group">
               <img src={proops.icon}/>
               <h4 className="mt-3 mb-2">{proops.nombre}</h4>
@@ -14,9 +16,11 @@ function Profes(proops){
                   <a href="#" className="fa fa-facebook-f"></a>
                  <a href="#" className="fa fa-instagram"></a>
                 <a href="#" className="fa fa-whatsapp"></a>
+              
               </div>
             </div>
-          </div>      
+         </SlideInTop></LazyLoad>
+         </div>      
        </>
     )
 }

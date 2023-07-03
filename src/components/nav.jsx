@@ -1,18 +1,20 @@
+import { Link } from 'react-router-dom';
 import '../Styles/nav.css'
 
 function Nav(){
     
     return(
         <nav className='navbar'>
-        <a href='#'>DevGym</a>
+        <Link to="/">DevGym</Link>
         <input type='checkbox' id='toggler'></input>
         <label className='fabars' for='toggler'><i className='fa fa-bars'></i></label>
         <div className='menu'>
         <ul className='lista'>
-            <li><a href='#Clases'>Clases</a></li>
-            <li><a href='#Instalaciones'>Instalaciones</a></li>
-            <li><a href='#coach'>Coaches</a></li>
-            <li><a href='#Contacto'>Contacto</a></li>
+            <li><Link to="/Clases">Clases</Link></li>
+            <li><Link to="/Instalaciones">Instalaciones</Link></li>
+            <li><Link to="/Coach">Coach</Link></li>
+            <li><Link to="/Contacto">Contacto</Link></li>
+            
         </ul>
         </div>
         </nav>

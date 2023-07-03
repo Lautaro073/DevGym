@@ -1,22 +1,28 @@
-import Footer from'./footer.jsx'
-import Header from'./header.jsx'
-import Principal from'./principal.jsx'
-import Carrusel from'./Carrusel.jsx'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import Form_contacto from './formulario.jsx'
-import Coach from './coach.jsx'
+import Footer from "../Pages/Footer.jsx";
+import Header from "./Header.jsx";
+import Clases from "../Pages/Clases.jsx";
+import Instalaciones from "../Pages/Instalaciones.jsx";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Form_contacto from "../Pages/Formulario.jsx";
+import Coach from "../Pages/Coach.jsx";
+import Inicio from '../Pages/Inicio.jsx'
+import { BrowserRouter as Router, 
+  Routes as Rutas,
+  Route  as Ruta }
+from "react-router-dom";
 function App() {
   return (
-<div className="">
-      <Header></Header>
-      <Principal></Principal>
-      <Carrusel></Carrusel>
- <Coach></Coach>
-      <Form_contacto></Form_contacto>
-      <Footer></Footer>
-    </div>
-
-  
+    <Router>
+    <Header/>
+    <Rutas>
+    <Ruta path="/" element={<Inicio />}></Ruta>
+    <Ruta path="/Clases" element={<Clases />}></Ruta>
+    <Ruta path="/Instalaciones" element={<Instalaciones />}></Ruta>
+    <Ruta path="/Coach" element={<Coach />}></Ruta>
+    <Ruta path="/Contacto" element={<Form_contacto />}></Ruta> 
+    </Rutas>
+    <Footer/>
+    </Router>
   );
 }
 
