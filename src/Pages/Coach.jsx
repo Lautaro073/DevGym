@@ -1,8 +1,8 @@
-import "../Styles/profes.css";
+import "../Styles/Profes.css";
 import t1 from "../Img/t1.jpg";
 import t2 from "../Img/t2.jpg";
 import t3 from "../Img/t3.jpg";
-import Profes from "../components/Profes";
+import Profes from "../components/Profes.jsx";
 function Coach() {
   return (
     <div className="coaches  py-lg-4 py-md-3 py-sm-3 py-3" id="coach">
@@ -10,7 +10,8 @@ function Coach() {
         <h3 className="coach-title text-center clr mb-lg-5 mb-md-4 mb-sm-4 mb-3">
           COACHES
         </h3>
-        <div className="row text-center grupo">
+        <div className="row text-center justify-content-center grupo">
+
           <Profes
             icon={t1}
             nombre="Matías Fernández"

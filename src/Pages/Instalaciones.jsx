@@ -1,4 +1,4 @@
-import '../Styles/Carrusel.css'
+import '../Styles/Instalaciones.css'
 import inst1 from '../Img/inst1.jpg'
 import inst2 from '../Img/inst2.jpg'
 import inst3 from '../Img/inst3.jpg'
@@ -62,7 +62,7 @@ function Carrusel(){
             </div>
             </div> 
         </div>
-        </>
+         </>
     )
 }
 export default Carrusel;

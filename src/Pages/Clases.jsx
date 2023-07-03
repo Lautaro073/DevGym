@@ -1,4 +1,4 @@
-import '../Styles/principal.css'
+import '../Styles/Clases.css'
 import Funcional from '../Img/funcional.jpg'
 import Musculacion from '../Img/musculacion.jpg'
 import Crossfit from '../Img/crossfit.jpeg'

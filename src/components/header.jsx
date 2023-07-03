@@ -1,4 +1,4 @@
-import '../Styles/header.css'
+import '../Styles/Header.css'
 import Nav from './Nav.jsx'
 
 const Header = () => {

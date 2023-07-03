@@ -33,6 +33,7 @@
             }
 .grupo {
   gap: 140px;
+ 
 }
 
 .coach-title{
@@ -96,6 +97,5 @@
     .coach-title {
       font-size: 45px;
     }
-    
    
   }

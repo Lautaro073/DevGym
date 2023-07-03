@@ -1,4 +1,4 @@
-import '../Styles/profes.css'
+import '../Styles/Profes.css'
 import SlideInTop from './SlideInTop';
 import LazyLoad from 'react-lazyload';
 function Profes(proops){

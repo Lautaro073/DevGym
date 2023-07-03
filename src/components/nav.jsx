@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
-import '../Styles/nav.css'
+import '../Styles/Nav.css'
 
 function Nav(){
     
     return(
         <nav className='navbar'>
-        <Link to="/">DevGym</Link>
+      <Link to="/">DevGym</Link>
         <input type='checkbox' id='toggler'></input>
         <label className='fabars' for='toggler'><i className='fa fa-bars'></i></label>
         <div className='menu'>
