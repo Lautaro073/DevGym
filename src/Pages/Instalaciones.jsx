@@ -41,22 +41,22 @@ function Carrusel(){
             </div>
      
             <div className='pagination'>
-                <label className='pagination-item' for="1">
+                <label className='pagination-item' htmlFor="1">
                     <img alt='inst1' src={inst1}/>
                 </label>
-                <label className='pagination-item' for="2">
+                <label className='pagination-item' htmlFor="2">
                     <img alt='inst2' src={inst2}/>
                 </label>
-                <label className='pagination-item' for="3">
+                <label className='pagination-item' htmlFor="3">
                     <img alt='inst3' src={inst3}/>
                 </label>
-                <label className='pagination-item' for="4">
+                <label className='pagination-item' htmlFor="4">
                     <img alt='inst4' src={inst4}/>
                 </label>
-                <label className='pagination-item' for="5">
+                <label className='pagination-item' htmlFor="5">
                     <img alt='inst5' src={inst5}/>
                 </label>
-                <label className='pagination-item' for="6">
+                <label className='pagination-item' htmlFor="6">
                     <img alt='inst6' src={inst6}/>
                 </label>
             </div>

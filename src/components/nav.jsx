@@ -7,7 +7,7 @@ function Nav(){
         <nav className='navbar'>
       <Link to="/">DevGym</Link>
         <input type='checkbox' id='toggler'></input>
-        <label className='fabars' for='toggler'><i className='fa fa-bars'></i></label>
+        <label className='fabars' htmlFor='toggler'><i className='fa fa-bars'></i></label>
         <div className='menu'>
         <ul className='lista'>
             <li><Link to="/Clases">Clases</Link></li>
