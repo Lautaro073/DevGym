@@ -55,61 +55,62 @@ const Form_contacto = () => {
      <div className="container py-lg-5 py-md-5 py-sm-4 py-3" id='Contacto'>
         <h3 className="title tit-form text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">CONTÁCTANOS</h3>
        
-        <form onSubmit={handleEnviar} >
-      <div className="row text-center contact-wls-detail">
-        <div className="col-md-4 form-group form-contacto">
-          <input
-            type="text"
-            id="nombre"
-            name="nombre"
-            value={nombre}
-            onChange={handleInputChange}
-            className="form-control"
-            placeholder="Nombre"
-            required
-          />
-        </div>
-        <div className="col-md-4 form-group form-contacto">
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={email}
-            onChange={handleInputChange}
-            className="form-control"
-            placeholder="Correo electrónico"
-            required
-          />
-        </div>
-        <div className="col-md-4 form-group form-contacto">
-          <input
-            type="tel"
-            id="telefono"
-            name="telefono"
-            value={telefono}
-            onChange={handleInputChange}
-            className="form-control"
-            placeholder="Teléfono"
-            required
-          />
-        </div>
-      </div>
-      <div className="form-group form-contacto">
-        <textarea
-          id="mensaje"
-          name="mensaje"
-          value={mensaje}
-          onChange={handleInputChange}
-          className="form-control"
-          rows="3"
-          placeholder="Mensaje"
-          required
-        ></textarea>
-      </div>
-      <button type="submit" className="btn btn-enviar" disabled={!isComplete}>
-        Enviar
-      </button>
-    </form>
+        <form onSubmit={handleEnviar}>
+  <div className="row text-center contact-wls-detail">
+    <div className="col-md-4 form-group form-contacto">
+      <input
+        type="text"
+        id="nombre"
+        name="nombre"
+        value={nombre}
+        onChange={handleInputChange}
+        className="form-control"
+        placeholder="Nombre"
+        required={true}
+      />
+    </div>
+    <div className="col-md-4 form-group form-contacto">
+      <input
+        type="email"
+        id="email"
+        name="email"
+        value={email}
+        onChange={handleInputChange}
+        className="form-control"
+        placeholder="Correo electrónico"
+        required={true}
+      />
+    </div>
+    <div className="col-md-4 form-group form-contacto">
+      <input
+        type="tel"
+        id="telefono"
+        name="telefono"
+        value={telefono}
+        onChange={handleInputChange}
+        className="form-control"
+        placeholder="Teléfono"
+        required={true}
+      />
+    </div>
+  </div>
+  <div className="form-group form-contacto">
+    <textarea
+      id="mensaje"
+      name="mensaje"
+      value={mensaje}
+      onChange={handleInputChange}
+      className="form-control"
+      rows={3}
+      placeholder="Mensaje"
+      required={true}
+    ></textarea>
+  </div>
+  <button type="submit" className="btn btn-enviar" disabled={!isComplete}>
+    Enviar
+  </button>
+</form>
+
         </div>
      
     
