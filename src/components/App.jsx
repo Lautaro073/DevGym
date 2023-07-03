@@ -1,5 +1,5 @@
 import Footer from "./Footer.jsx";
-import Header from "./Header.jsx";
+import Header from "./Header.jsx"
 import Clases from "../Pages/Clases.jsx";
 import Instalaciones from "../Pages/Instalaciones.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
