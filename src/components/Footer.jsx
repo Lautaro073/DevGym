@@ -16,8 +16,8 @@ const Footer = () => {
         </div>
         <div className="box">
           <h2>HORARIOS</h2>
-          <p>Lunes a Viernes: 7 a 23 hs</p>
-          <p>Sábado: 9 a 18 hs</p>
+          <p>Estamos aquí para ayudarte,</p>
+          <p>contáctanos cuando quieras!</p>
          
         </div>
       </div>
