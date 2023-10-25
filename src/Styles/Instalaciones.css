@@ -1,201 +1,159 @@
-.fondo-carrusel{
-    background-color: #ffffff;
-    height: 620px;
+/* Combined Carousel Modern & Enhanced Styles */
+
+.fondo-carrusel {
+    background-color: white;
+    padding: 2.5em 0;
 }
 
-.tit-carrusel{
+.tit-carrusel {
     font-family: Baskerville, Baskerville Old Face, Garamond, Times New Roman, serif;
-    font-size: 55px;
-    color:#000;
+    font-size: 3.5rem;
+    color: #000;
     text-align: center;
     padding: 10px 0px;
+    margin-bottom: 1em;
 }
 
-.item-slidee img{
-    height: 450px;
-}
-
-.container-all{
-    position: relative;
-    height: 450px;
-    width: 100%;
-    overflow: hidden;
-}
-
-.slidee{
-    display: flex;
-    transform: translate3d(0, 0, 0);
-    transition: all 600ms;
-    animation-name: autoplay;
-    animation-duration: 12.5s;
-    animation-iteration-count: infinite;
-}
-
-.item-slidee{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 0;
-    flex-grow: 0;
-    width: 100%;
-    height: 100%;
-    animation: aparicion 2s ease-in-out;  /* Agregamos la animación aquí */
-}
-
-.pagination{
-    position: absolute;
-    bottom: 20px;
-    left: 0;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-
-.pagination-item{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 2px solid white;
-    width: 16px;
-    height: 16px;
-    border-radius: 4px;
-    overflow: hidden;
-    cursor: pointer;
-    background: rgba(255, 255, 255, 0.5);
-    margin: 0 10px;
+.desc-carrusel {
+    font-size: 1.4rem;
+    color: #000;
     text-align: center;
-    transition: all 300ms;
+    margin-bottom: 2em;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.pagination-item:hover{
-    transform: scale(2);
+#Instalaciones .carousel {
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
 }
 
-.pagination-item img{
-    display: inline-block;
-    max-width: none;
-    height: 100%;
-    transform: scale(1);
+#Instalaciones .carousel-inner {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#Instalaciones .carousel-item {
     opacity: 0;
-    transition: all 300ms;
+    transition: opacity 1s, transform 1s ease;
 }
 
-.pagination-item:hover img{
+#Instalaciones .carousel-item.active {
     opacity: 1;
-    transform: scale(1);
-}
-input[id="1"]:checked ~ .slidee{
-    animation: none;
-    transform: translate3d(0, 0, 0);
 }
 
-input[id="1"]:checked ~ .pagination .pagination-item[for="1"]{
-    background: #fff;
+#Instalaciones .carousel-inner img {
+    height: 500px;
+    object-fit: cover;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-input[id="2"]:checked ~ .slidee{
-    animation: none;
-    transform: translate3d(calc(-100% * 1), 0, 0);
+#Instalaciones .carousel-control-prev, #Instalaciones .carousel-control-next {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s;
 }
 
-input[id="2"]:checked ~ .pagination .pagination-item[for="2"]{
-    background: #fff;
+#Instalaciones .carousel-control-prev:hover, #Instalaciones .carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
-input[id="3"]:checked ~ .slidee{
-    animation: none;
-    transform: translate3d(calc(-100% * 2), 0, 0);
+#Instalaciones .carousel-control-prev-icon, #Instalaciones .carousel-control-next-icon {
+    width: 20px;
+    height: 20px;
+    background-color: #2a2a2a;
+    border-radius: 50%;
+    display: block;
+    background-image: none;
 }
 
-input[id="3"]:checked ~ .pagination .pagination-item[for="3"]{
-    background: #fff;
-}
-
-input[id="4"]:checked ~ .slidee{
-    animation: none;
-    transform: translate3d(calc(-100% * 3), 0, 0);
-}
-
-input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
-    background: #fff;
-}
-
-input[id="5"]:checked ~ .slidee{
-    animation: none;
-    transform: translate3d(calc(-100% * 4), 0, 0);
-}
-
-input[id="5"]:checked ~ .pagination .pagination-item[for="5"]{
-    background: #fff;
-}
-
-input[id="6"]:checked ~ .slidee{
-    animation: none;
-    transform: translate3d(calc(-100% * 5), 0, 0);
-}
-
-input[id="6"]:checked ~ .pagination .pagination-item[for="6"]{
-    background: #fff;
-}
-@keyframes aparicion {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
-
-@keyframes autoplay{
-    16%{
-        transform: translate3d(calc(-100% * 0), 0, 0);
-    }
-
-    32%{
-        transform: translate3d(calc(-100% * 1), 0, 0);
-    }
+#Instalaciones .carousel-control-prev-icon:after {
+    content: '❮';
+    font-size: 20px;
+    position: relative;
     
-    48%{
-        transform: translate3d(calc(-100% * 2), 0, 0);
-    }
-    64%{
-        transform: translate3d(calc(-100% * 3), 0, 0);
-    }
-
-    80%{
-        transform: translate3d(calc(-100% * 4), 0, 0);
-    }
-
-    96%{
-        transform: translate3d(calc(-100% * 5), 0, 0);
-    }
-}
-@media only screen and (max-width: 768px) {
-    .fondo-carrusel {
-      height: 500px;
-    }
-    .tit-carrusel {
-      font-size: 45px;
-    }
-    .item-slidee img {
-      height: 350px;
-    }
-    .container-all {
-      height: 350px;
-    }
 }
 
-@media only screen and (min-width: 1440px) {
-    .fondo-carrusel {
-      height: 1200px;
-    }
-    .tit-carrusel {
-      font-size: 70px;
-    }
-    .item-slidee img {
-      height: 950px;
-    }
-    .container-all {
-      height: 950px;
-    }
+#Instalaciones .carousel-control-next-icon:after {
+    content: '❯';
+    font-size: 20px;
+    position: relative;
+   
 }
 
-  
+#Instalaciones .carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#Instalaciones .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: background-color 0.3s;
+}
+
+#Instalaciones .carousel-indicators .active {
+    background-color: #f05f40;
+}
+/* Responsive adjustments for smaller screens */
+
+@media (max-width: 768px) {
+    #Instalaciones .carousel-inner, 
+    #Instalaciones .carousel-item, 
+    #Instalaciones .carousel-item img {
+        height: 300px;  /* Reduced height for mobile screens */
+    }
+
+    #Instalaciones .carousel-control-prev, 
+    #Instalaciones .carousel-control-next {
+        width: 40px;
+        height: 40px;
+    }
+
+    #Instalaciones .carousel-control-prev-icon, 
+    #Instalaciones .carousel-control-next-icon {
+        width: 15px;
+        height: 15px;
+        
+    }
+}
+#Instalaciones .carousel-control-next-icon:after,
+    #Instalaciones .carousel-control-prev-icon:after{
+        top: -6px;
+    }
+
+@media (max-width: 576px) {
+    
+    #Instalaciones .carousel-inner, 
+    #Instalaciones .carousel-item, 
+    #Instalaciones .carousel-item img {
+        height: 250px;  /* Even more reduced height for very small screens */
+    }
+
+    #Instalaciones .carousel-control-prev, 
+    #Instalaciones .carousel-control-next {
+        width: 30px;
+        height: 30px;
+    }
+
+    #Instalaciones .carousel-control-prev-icon, 
+    #Instalaciones .carousel-control-next-icon {
+        width: 12px;
+        height: 12px;
+        top: 50px;
+    }
+    #Instalaciones .carousel-control-next-icon:after,
+    #Instalaciones .carousel-control-prev-icon:after{
+        top: -10px;
+    }
+}

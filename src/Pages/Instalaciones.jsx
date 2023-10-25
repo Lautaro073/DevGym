@@ -1,68 +1,61 @@
-import '../Styles/Instalaciones.css'
-import inst1 from '../Img/inst1.jpg'
-import inst2 from '../Img/inst2.jpg'
-import inst3 from '../Img/inst3.jpg'
-import inst4 from '../Img/inst4.png'
-import inst5 from '../Img/inst5.png'
-import inst6 from '../Img/inst6.jpg'
+import React from 'react';
+import '../Styles/Instalaciones.css';
+import inst1 from '../Img/inst1.jpg';
+import inst2 from '../Img/inst2.jpg';
+import inst3 from '../Img/inst3.jpg';
+import inst4 from '../Img/inst4.png';
+import inst5 from '../Img/inst5.png';
+import inst6 from '../Img/inst6.jpg';
 
-function Carrusel(){
-    return(
-        <>
-        <div className='fondo-carrusel' id='Instalaciones'>
-            <h1 className='tit-carrusel'>INSTALACIONES</h1>
-            <div className='container-all'>
-                <input type='radio' id='1' name='image-slidee' hidden/>
-                <input type='radio' id='2' name='image-slidee' hidden/>
-                <input type='radio' id='3' name='image-slidee' hidden/>
-                <input type='radio' id='4' name='image-slidee' hidden/>
-                <input type='radio' id='5' name='image-slidee' hidden/>
-                <input type='radio' id='6' name='image-slidee' hidden/>
-
-            <div className='slidee'>
-            <div className='item-slidee'>
-                <img alt='inst1' src={inst1}/>
+function Carrusel() {
+    return (
+        <div className="fondo-carrusel" id="Instalaciones">
+            <h1 className="tit-carrusel">Entrenamientos</h1>
+            <p className="desc-carrusel">
+                Descubre nuestros entrenamientos diseñadas para ofrecerte el mejor resultado y la mejor experiencia.
+            </p>
+            <div className="carousel">
+                <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
+                    <div className="carousel-inner">
+                        <div className="carousel-item active">
+                            <img src={inst1} className="d-block w-100" alt="inst1" />
+                        </div>
+                        <div className="carousel-item">
+                            <img src={inst2} className="d-block w-100" alt="inst2" />
+                        </div>
+                        <div className="carousel-item">
+                            <img src={inst3} className="d-block w-100" alt="inst3" />
+                        </div>
+                        <div className="carousel-item">
+                            <img src={inst4} className="d-block w-100" alt="inst4" />
+                        </div>
+                        <div className="carousel-item">
+                            <img src={inst5} className="d-block w-100" alt="inst5" />
+                        </div>
+                        <div className="carousel-item">
+                            <img src={inst6} className="d-block w-100" alt="inst6" />
+                        </div>
+                    </div>
+                    <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span className="visually-hidden">Previous</span>
+                    </button>
+                    <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span className="visually-hidden">Next</span>
+                    </button>
+                    <div className="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                    </div>
+                </div>
             </div>
-            <div className='item-slidee'>
-                <img alt='inst2' src={inst2}/>
-            </div>
-            <div className='item-slidee'>
-                <img alt='inst3' src={inst3}/>
-            </div>
-            <div className='item-slidee'>
-                <img alt='inst4' src={inst4}/>
-            </div>
-            <div className='item-slidee'>
-                <img alt='inst5' src={inst5}/>
-            </div>
-            <div className='item-slidee'>
-                <img alt='inst6' src={inst6}/>
-            </div>
-            </div>
-     
-            <div className='pagination'>
-                <label className='pagination-item' htmlFor="1">
-                    <img alt='inst1' src={inst1}/>
-                </label>
-                <label className='pagination-item' htmlFor="2">
-                    <img alt='inst2' src={inst2}/>
-                </label>
-                <label className='pagination-item' htmlFor="3">
-                    <img alt='inst3' src={inst3}/>
-                </label>
-                <label className='pagination-item' htmlFor="4">
-                    <img alt='inst4' src={inst4}/>
-                </label>
-                <label className='pagination-item' htmlFor="5">
-                    <img alt='inst5' src={inst5}/>
-                </label>
-                <label className='pagination-item' htmlFor="6">
-                    <img alt='inst6' src={inst6}/>
-                </label>
-            </div>
-            </div> 
         </div>
-         </>
-    )
+    );
 }
+
 export default Carrusel;

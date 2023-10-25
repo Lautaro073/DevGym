@@ -1,30 +1,34 @@
 import '../Styles/FormContacto.css'
-import Swal from 'sweetalert2';
+
 import React, { useState } from 'react';
 const Form_contacto = () => {
   // Define varios estados diferentes utilizando el hook useState
   const [nombre, setNombre] = useState("");
   const [email, setEmail] = useState("");
-  const [telefono, setTelefono] = useState("");
+  
   const [mensaje, setMensaje] = useState("");
   const [isComplete, setIsComplete] = useState(false);
-
+  const generarLinkWhatsApp = () => {
+    const numero = "+5493865601579"; 
+    const base = "https://api.whatsapp.com/send?phone=";
+    // Estructura el mensaje basado en la información proporcionada en el formulario
+    const mensajeForm = `Hola! Mi nombre es ${nombre}.
+    Mi correo electrónico es ${email}.
+    Mensaje: ${mensaje}`;
+    return `${base}${numero}&text=${encodeURIComponent(mensajeForm)}`;
+  };
   // Manejador de eventos que se llama cuando se envía el formulario
   const handleEnviar = (event) => {
     event.preventDefault();
-    // Muestra un mensaje de éxito utilizando la biblioteca SweetAlert2
-    Swal.fire({
-      title: `¡Hola ${nombre}!`,
-      text: "Tu mensaje se envió con éxito",
-      icon: "success",
-      confirmButtonText: "Aceptar",
-    });
+    // Redirige al usuario a WhatsApp
+    window.open(generarLinkWhatsApp(), '_blank');
     // Limpia los campos de entrada después de enviar el formulario
     setNombre("");
     setEmail("");
-    setTelefono("");
+    
     setMensaje("");
   };
+  
 
   // Manejador de eventos que se llama cuando uno o más campos del formulario cambian
   const handleInputChange = (event) => {
@@ -34,7 +38,7 @@ const Form_contacto = () => {
     const stateSetterMap = {
       nombre: setNombre,
       email: setEmail,
-      telefono: setTelefono,
+      
       mensaje: setMensaje,
     };
 
@@ -46,9 +50,10 @@ const Form_contacto = () => {
 
     // Determina si el formulario está completo basándose en si todos los campos obligatorios tienen un valor no vacío
     setIsComplete(
-      nombre !== "" && email !== "" && telefono !== "" && mensaje !== ""
+      nombre !== "" && email !== ""  && mensaje !== ""
     );
   };
+  
     return (
         <>
     
@@ -57,7 +62,7 @@ const Form_contacto = () => {
        
         <form onSubmit={handleEnviar}>
   <div className="row text-center contact-wls-detail">
-    <div className="col-md-4 form-group form-contacto">
+    <div className="col-md-6 form-group form-contacto"> {/* Cambiado de col-md-4 a col-md-6 */}
       <input
         type="text"
         id="nombre"
@@ -69,7 +74,7 @@ const Form_contacto = () => {
         required={true}
       />
     </div>
-    <div className="col-md-4 form-group form-contacto">
+    <div className="col-md-6 form-group form-contacto"> {/* Cambiado de col-md-4 a col-md-6 */}
       <input
         type="email"
         id="email"
@@ -78,18 +83,6 @@ const Form_contacto = () => {
         onChange={handleInputChange}
         className="form-control"
         placeholder="Correo electrónico"
-        required={true}
-      />
-    </div>
-    <div className="col-md-4 form-group form-contacto">
-      <input
-        type="tel"
-        id="telefono"
-        name="telefono"
-        value={telefono}
-        onChange={handleInputChange}
-        className="form-control"
-        placeholder="Teléfono"
         required={true}
       />
     </div>

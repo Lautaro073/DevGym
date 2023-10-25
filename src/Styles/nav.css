@@ -3,58 +3,122 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    background-color: transparent;
-    padding: 0px 20px;
+    background-color: rgba(42, 42, 42, 0.95); /* Añadido un ligero fondo para mejorar la visibilidad */
+    padding-top: 0px;
+    width: 100%;
+    position: fixed; /* Posición fija */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Alto z-index para asegurar que esté en la parte superior de otros elementos */
 }
-.navbar a{
+
+
+
+.lista {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    color: #fff;
+    padding-top: 15px;
+    margin: 0;
+}
+
+.lista li a {
     text-decoration: none;
     color: white;
     font-family: serif;
     font-size: 22px;
     padding: 0px 10px;
     display: flex;
-}
-.navbar a:hover{
-    color: #db450e;
-}
-.lista{
-    list-style: none;
-    display: flex;
-    gap: 25px;
-    color: #fff;
-    padding-top: 15px;
+    transition: color 0.3s;
 }
 
-#toggler,
-.navbar label{
+.lista li a:hover {
+    color: #db450e;
+}
+
+#toggler {
     display: none;
 }
 
-@media screen and 
-(max-width: 800px){
-    .navbar{
-        padding:10px 20px ;
-    }
-    .menu{
-        width: 100%;
-        max-height: 0;
-        overflow: hidden;
-    }
-    .lista{
-        flex-direction: column;
+.fabars {
+    display: none;
+}
+/* Contenedor intermedio */
+.menu-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .navbar {
+        display: flex;
+        flex-wrap: wrap;
         align-items: center;
-        padding: 20px;
+        justify-content: space-between;
+        background-color: rgba(42, 42, 42, 0.95); /* Añadido un ligero fondo para mejorar la visibilidad */
+        padding: 0px 20px;
+        width: 100%;
+        position: fixed; /* Posición fija */
+        top: 0;
+        left: 0;
+        z-index: 1000; /* Alto z-index para asegurar que esté en la parte superior de otros elementos */
     }
-    .navbar label{
+    .navbar-logo {
+        display: none;
+    }
+    
+    .fabars {
         display: inline-flex;
         align-items: center;
         cursor: pointer;
-        padding-right: 20px;
+        padding-right: 0px;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        z-index: 2000;
     }
-    #toggler:checked ~ .menu{
-        max-height: 100%;
+    .toggler-circle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgba(42, 42, 42, 0.95);
     }
-    .fabars{
-        filter:invert(100%)
+    
+    .toggler-circle .fa-bars {
+        color: #fff;
+    }
+    
+    
+    .menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.9);
+        flex-direction: column;
+        justify-content: center;
+        z-index: 999;
+        align-items: center;  /* Agregado para centrar las opciones del menú */
+        z-index: 1500;
+    }
+
+    #toggler:checked ~ .menu-container .menu {
+        display: flex;
+    }
+
+    .lista {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .lista li a {
+        font-size: 25px;
     }
 }

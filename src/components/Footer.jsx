@@ -1,5 +1,5 @@
 import "../Styles/Footer.css";
-import logoFooter from '../Img/logo.png'
+import logoFooter from '../Img/logo3.png'
 const Footer = () => {
   return (
     <footer className="pie-pagina">
@@ -11,7 +11,6 @@ const Footer = () => {
         </div>
         <div className="box">
           <h2>CLASES</h2>
-          <p>CrossFit</p>
           <p>Musculación</p>
           <p>Funcional</p>
         </div>
@@ -26,10 +25,12 @@ const Footer = () => {
         <div className="box">
           <h2>SIGUENOS</h2>
           <div className="red-social">
-            <a href="" className="fa fa-facebook"></a>
-            <a href="" className="fa fa-instagram"></a>
-            <a href="" className="fa fa-twitter"></a>
-            <a href="" className="fa fa-linkedin"></a>
+          <a
+                  href="https://www.instagram.com/exe_pintos?igshid=MzRlODBiNWFlZA%3D%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="fa fa-instagram"
+                ></a>
           </div>
         </div>
         <small>

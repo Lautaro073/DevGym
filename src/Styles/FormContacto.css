@@ -38,7 +38,7 @@
     @media only screen and (max-width: 768px) {
    
         .title {
-          font-size: 45px;
+          font-size: 2.5rem;
         }
       }
       @keyframes aparicion {

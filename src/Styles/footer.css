@@ -23,13 +23,13 @@
     align-items: center;
 }
 .pie-pagina .grupo-1 .box figure img{
-    width:100px ;
+    width:15em ;
 }
 
 
 .pie-pagina .grupo-1 .box h2{
     color:white ;
-    font-family: Broadway;
+    font-family: Baskerville, Baskerville Old Face, Garamond, Times New Roman, serif;
     margin-bottom: 25px;
     font-size: 20px;
 }
@@ -40,7 +40,7 @@
 .pie-pagina .grupo-1 .box p{
     color:white ;
     margin-bottom: 10px;
-    font-family: Broadway;
+    font-family: Baskerville, Baskerville Old Face, Garamond, Times New Roman, serif;
 }
 .pie-pagina .grupo-2 .red-social a{
     display: inline-block;
@@ -71,7 +71,7 @@
     color:white ;
     margin-bottom: 25px;
     font-size: 20px;
-    font-family: Broadway;
+    font-family: Baskerville, Baskerville Old Face, Garamond, Times New Roman, serif;
 }
 .pie-pagina .grupo-2 small{
     font-size: 15px;

@@ -1,10 +1,10 @@
 import '../Styles/Header.css'
-import Nav from './Nav.jsx';
+
 
 const Header = () => {
   return (
     <header className='header'>
-        <Nav/>
+     
        
       
        <div id="carouselExampleRide" className="carousel slide" data-bs-ride="true">
