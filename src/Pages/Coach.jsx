@@ -13,9 +13,9 @@ function Coach() {
           <Profes
             icon={t1}
             nombre="Exequiel Pintos"
-            enseña="Musculación/Funcional"
-            descripcion="Entrenamiento perzonalizado - Especialista en fuerza y acondicionamiento físico -
-         Alto rendimiento"
+            enseña="Entrenamiento Perzonalizado"
+            descripcion="Planificación de rutinas - Aumento de masa muscular - Descenso de peso - 
+            Mejoras en niveles de fuerza y potencia - Antropometría / Bioimpedancia - Asesoria"
           />
          
         </div>

@@ -1,5 +1,7 @@
 import '../Styles/Header.css'
-
+import foto1 from '../Img/foto1.png'
+import foto2 from '../Img/foto2.png'
+import foto3 from '../Img/foto3.png'
 
 const Header = () => {
   return (
@@ -11,17 +13,17 @@ const Header = () => {
         <div className="carousel-inner">
           <div className="carousel-item active">
             <div className='frase'>
-               TRANSFORMA TU CUERPO, TRANSFORMA TU MENTE, TRANSFORMA TU VIDA
+              <img alt='foto1' src={foto1}/>
             </div>
           </div>
           <div className="carousel-item">
             <div className='frase'>
-              CUIDA TU CUERPO, ES EL ÚNICO LUGAR QUE TIENES PARA VIVIR
+            <img alt='foto2' src={foto2}/>
             </div>
           </div>
           <div className="carousel-item">
             <div className='frase'>
-              NO CONOCES TUS LÍMITES, HASTA QUE LOS SUPERAS
+            <img alt='foto3' src={foto3}/>
             </div>
           </div>
         </div>

@@ -1,11 +1,11 @@
 import React from 'react';
 import '../Styles/Instalaciones.css';
-import inst1 from '../Img/inst1.jpg';
-import inst2 from '../Img/inst2.jpg';
-import inst3 from '../Img/inst3.jpg';
+import inst1 from '../Img/inst1.png';
+import inst2 from '../Img/inst2.png';
+import inst3 from '../Img/inst3.png';
 import inst4 from '../Img/inst4.png';
 import inst5 from '../Img/inst5.png';
-import inst6 from '../Img/inst6.jpg';
+import inst6 from '../Img/inst6.png';
 
 function Carrusel() {
     return (
