@@ -7,7 +7,7 @@ import Form_contacto from "../Pages/Formulario.jsx";
 import Coach from "../Pages/Coach.jsx";
 import Inicio from '../Pages/Inicio.jsx'
 import PageNotFound from "../Pages/PageNotFound.jsx";
-import Nav from "../components/nav.jsx";
+import Nav from "./components/nav.jsx";
 import { BrowserRouter as Router, 
   Routes as Rutas,
   Route  as Ruta }
