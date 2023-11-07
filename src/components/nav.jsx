@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import '../Styles/Nav.css';
+import '../Styles/nav.css';
 
 function Nav() {
     const closeMenu = () => {

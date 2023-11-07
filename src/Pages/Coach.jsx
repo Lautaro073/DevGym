@@ -1,6 +1,6 @@
-import "../Styles/Profes.css";
+import "../Styles/profes.css";
 import t1 from "../Img/t1.jpg";
-import Profes from "../components/Profes.jsx";
+import Profes from "../components/profes.jsx";
 function Coach() {
   return (
     <div className="coaches  py-lg-4 py-md-3 py-sm-3 py-3" id="coach">

@@ -1,4 +1,4 @@
-import '../Styles/Header.css'
+import '../Styles/header.css'
 import foto1 from '../Img/foto1.png'
 import foto2 from '../Img/foto2.png'
 import foto3 from '../Img/foto3.png'

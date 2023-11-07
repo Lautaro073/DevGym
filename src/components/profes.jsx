@@ -1,4 +1,4 @@
-import "../Styles/Profes.css";
+import "../Styles/profes.css";
 import SlideInTop from "./SlideInTop";
 import LazyLoad from "react-lazyload";
 import { Link } from "react-router-dom";

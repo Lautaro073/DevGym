@@ -1,4 +1,5 @@
-import Footer from "./Footer.jsx";import Header from "./Header.jsx"
+import Footer from "./Footer.jsx";
+import Header from "./header.jsx"
 import Clases from "../Pages/Clases.jsx";
 import Instalaciones from "../Pages/Instalaciones.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -6,7 +7,7 @@ import Form_contacto from "../Pages/Formulario.jsx";
 import Coach from "../Pages/Coach.jsx";
 import Inicio from '../Pages/Inicio.jsx'
 import PageNotFound from "../Pages/PageNotFound.jsx";
-import Nav from "../components/Nav.jsx";
+import Nav from "../components/nav.jsx";
 import { BrowserRouter as Router, 
   Routes as Rutas,
   Route  as Ruta }
